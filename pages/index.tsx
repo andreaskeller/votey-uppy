@@ -10,6 +10,7 @@ import {
 } from 'lib/data-types';
 import Loading from 'components/Loading';
 import Filter from 'components/Filter';
+import { getAllItems } from 'db/item-dao';
 
 interface HomeProps {
   items: Item[] | undefined;
@@ -89,12 +90,11 @@ function SortFilter({ currentSort }: { currentSort?: string }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${process.env.SITE}/api/items`);
-  const items = await res.json();
+  const items = await getAllItems({});
 
   return {
     props: {
-      items,
+      items: JSON.parse(JSON.stringify(items)),
     },
     revalidate: 30,
   };
