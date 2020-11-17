@@ -100,14 +100,14 @@ export default function ManageItemForm({ mode = 'add', item }: Props) {
               </p>
             )}
             {justSubmittedIsSuccess && isAdd && (
-              <p className="py-2 leading-6 text-sm text-gray-800 rounded border border-purple-300 bg-purple-200 text-center">
+              <p className="py-2 leading-6 text-sm text-gray-800 rounded border border-blue-300 bg-blue-200 text-center">
                 Thanks for the idea! We&apos;ll review it shortly!
                 <br />
                 You&apos;ll see it appear on the homepage if it is accepted.
               </p>
             )}
             {justSubmittedIsSuccess && isEdit && (
-              <p className="py-2 leading-6 text-sm text-gray-800 rounded border border-purple-300 bg-purple-200 text-center">
+              <p className="py-2 leading-6 text-sm text-gray-800 rounded border border-blue-300 bg-blue-200 text-center">
                 Updated!
               </p>
             )}
@@ -185,17 +185,17 @@ export default function ManageItemForm({ mode = 'add', item }: Props) {
             <div className="flex flex-row mt-2 justify-end">
               <button
                 className={classNames(
-                  'text-purple-100  transition-colors ease-in-out duration-150 font-bold rounded py-2 px-4',
+                  'text-blue-100  transition-colors ease-in-out duration-150 font-bold rounded py-2 px-4',
                   {
-                    'bg-purple-600 hover:bg-purple-500': !buttonDisabled,
-                    'bg-purple-300  cursor-not-allowed': buttonDisabled,
+                    'bg-blue-600 hover:bg-blue-500': !buttonDisabled,
+                    'bg-blue-300  cursor-not-allowed': buttonDisabled,
                   }
                 )}
                 type="submit"
                 disabled={buttonDisabled}
               >
                 {isSubmitting ? (
-                  <Loading className="text-purple-100 w-8 h-8" />
+                  <Loading className="text-blue-100 w-8 h-8" />
                 ) : isAdd ? (
                   'Add'
                 ) : (

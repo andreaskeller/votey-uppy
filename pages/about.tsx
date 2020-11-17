@@ -8,7 +8,7 @@ export default function About() {
       <p>
         Welcome to{' '}
         <Anchor
-          className="text-purple-800 hover:text-purple-600"
+          className="text-blue-800 hover:text-blue-600"
           href="https://github.com/hswolff/votey-uppy"
         >
           votey-uppy

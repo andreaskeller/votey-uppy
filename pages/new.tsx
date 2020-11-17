@@ -10,7 +10,7 @@ export default function NewItem() {
       {session && <ManageItemForm />}
       {!session && (
         <button
-          className="hover:text-purple-500"
+          className="hover:text-blue-500"
           onClick={() => signin('github')}
         >
           sign in to add a new item

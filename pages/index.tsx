@@ -51,7 +51,7 @@ export default function Home({ items }: HomeProps) {
       </div>
 
       {isLoading && (
-        <Loading className="mx-auto my-4 text-purple-700 opacity-50" />
+        <Loading className="mx-auto my-4 text-blue-700 opacity-50" />
       )}
 
       {data && <ItemList items={data} />}

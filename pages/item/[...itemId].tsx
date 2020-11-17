@@ -33,7 +33,7 @@ export default function ItemPage() {
   return (
     <div>
       {isLoading && (
-        <Loading className="mx-auto my-4 text-purple-700 opacity-50" />
+        <Loading className="mx-auto my-4 text-blue-700 opacity-50" />
       )}
       {isSuccess && item && <Item item={item} />}
     </div>

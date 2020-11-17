@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="">
         <Link href="/">
           <a className="">
-            <h1 className="text-center text-6xl text-purple-700 hover:text-purple-600 transition-colors ease-linear">
+            <h1 className="text-center text-6xl text-blue-700 hover:text-blue-600 transition-colors ease-linear">
               votey-uppy
             </h1>
           </a>
@@ -43,7 +43,7 @@ function Nav() {
   const [session] = useSession();
 
   return (
-    <nav className="flex flex-row max-w-md mb-4 py-1 px-2 mx-auto justify-between text-purple-900">
+    <nav className="flex flex-row max-w-md mb-4 py-1 px-2 mx-auto justify-between text-blue-900">
       <ul className="flex flex-row space-x-2">
         {links.map((link) => (
           <li key={link.href}>

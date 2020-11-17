@@ -27,15 +27,15 @@ export default function Item({ item }: { item: ItemInterface }) {
     <Card className="flex flex-row">
       <div
         data-testid="vote-wrapper"
-        className="flex flex-col justify-start mr-4 pr-4 text-center border-r border-purple-100"
+        className="flex flex-col justify-start mr-4 pr-4 text-center border-r border-blue-100"
       >
         <button
           className={classNames(
-            'text-purple-400 relative transition-colors duration-150 text-4xl cursor-pointer',
+            'text-blue-400 relative transition-colors duration-150 text-4xl cursor-pointer',
             {
-              'hover:text-purple-500': !isLoading,
+              'hover:text-blue-500': !isLoading,
               'animate-bounce': isLoading,
-              'text-purple-700': hasVoted,
+              'text-blue-700': hasVoted,
             }
           )}
           onClick={hasVoted ? removeVote : addVote}
@@ -45,9 +45,9 @@ export default function Item({ item }: { item: ItemInterface }) {
         </button>
         <div
           className={classNames(
-            'text-purple-100 bg-purple-400 font-bold rounded mt-2',
+            'text-blue-100 bg-blue-400 font-bold rounded mt-2',
             {
-              'bg-purple-700': hasVoted,
+              'bg-blue-700': hasVoted,
             }
           )}
         >

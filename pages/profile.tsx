@@ -38,7 +38,7 @@ export default function Me() {
     <Card className="flex flex-col">
       <Header className="mb-6">Profile</Header>
 
-      {isLoading && <Loading className="mx-auto text-purple-700 opacity-50" />}
+      {isLoading && <Loading className="mx-auto text-blue-700 opacity-50" />}
 
       {content()}
     </Card>
